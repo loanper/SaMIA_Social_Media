@@ -1,0 +1,108 @@
+# File created using '.gitignore Generator' for Visual Studio Code: https://bit.ly/vscode-gig
+# Created by https://www.toptal.com/developers/gitignore/api/windows,visualstudiocode
+# Edit at https://www.toptal.com/developers/gitignore?templates=windows,visualstudiocode
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+# Local History for Visual Studio Code
+.history/
+
+# Built Visual Studio Code Extensions
+*.vsix
+
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history
+.ionide
+
+### Windows ###
+# Windows thumbnail cache files
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+
+# Dump file
+*.stackdump
+
+# Folder config file
+[Dd]esktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# End of https://www.toptal.com/developers/gitignore/api/windows,visualstudiocode
+
+# Custom rules (everything added below won't be overriden by 'Generate .gitignore File' if you use 'Update' option)
+
+### Python (minimal) ###
+__pycache__/
+*.py[cod]
+
+# Virtual envs (do not commit)
+.venv/
+venv/
+env/
+.env/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Test / lint caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+### ML / Model caches (do not commit) ###
+# Repo-local HF/transformers cache folders
+/cache/
+/samia/cache/
+
+# Common model weights / checkpoints
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+
+### Datasets (do not commit) ###
+# Raw CSVs (Facebook/TikTok) under EDA when repo root is R&D
+/EDA/*.csv
+/EDA/*.tsv
+/EDA/*.parquet
+
+# JSONL datasets + references
+/samia/custom_data/
+/samia/wikimia/
+/custom_data/
+/wikimia/
+
+### Generated outputs (do not commit) ###
+/samia/sample/
+/samia/results/
+/sample/
+/results/
+
+### Logs / temporary ###
+*.log
+*.tmp
+*.bak
+*.swp
